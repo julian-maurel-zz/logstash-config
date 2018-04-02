@@ -1,7 +1,7 @@
 FROM sebp/elk
 
-ADD ./local_jahia.conf /etc/logstash/conf.d/local_jahia.conf
-ADD ./jahialog.conf /etc/logstash/conf.d/jahialog.conf
+ADD ./local_jahia.conf /etc/logstash/conf.d/01_local_jahia.conf
+ADD ./jahialog.conf /etc/logstash/conf.d/09_jahialog.conf
 
 ADD ./patterns/jahia /opt/logstash/patterns/jahia
 
